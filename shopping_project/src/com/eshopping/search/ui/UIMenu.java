@@ -17,7 +17,7 @@ public class UIMenu {
 			System.out.println("| 3.My Orders       |");
 			System.out.println("| 4.Back            |");
 			System.out.println("+===================+");
-			System.out.print("Enter");
+			System.out.print("Enter : ");
 			command = Utility.in.next();
 			System.out.println();
 			switch(command)

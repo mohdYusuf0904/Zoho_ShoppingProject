@@ -18,6 +18,7 @@ public class AccountViewUi {
 	   	System.out.println("| Email id    : "+ user.getEmail());
 	   	System.out.println("+==============[2.Back]=========================================================================================+");
 	
+	   	System.out.print("Enter:");
 	   	while(!Utility.in.next().equals("2")) {
 			System.out.println("Wrong command");
 		}

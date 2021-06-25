@@ -20,7 +20,7 @@ public class SearchUi {
 			System.out.println("| 4.Back               |");
 			System.out.println("+----------------------+");
 
-			System.out.print("Enter :");
+			System.out.print("Enter : ");
 			command = Utility.in.next();
 			
 			switch(command)

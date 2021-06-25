@@ -83,7 +83,7 @@ public class FashionCatagoryUI {
 		
 			}
 			
-		}while(command.equals("5"));
+		}while(!command.equals("4"));
 		
 	}
 
@@ -114,7 +114,7 @@ public class FashionCatagoryUI {
 	
 		}
 		
-	}while(command.equals("3"));
+	}while(!command.equals("3"));
 
 		
 	}
@@ -150,7 +150,7 @@ public class FashionCatagoryUI {
 	
 		}
 		
-	}while(command.equals("4"));
+	}while(!command.equals("4"));
 
 		
 	}
@@ -190,12 +190,9 @@ public class FashionCatagoryUI {
 	
 		}
 		
-	}while(command.equals("5"));
+	}while(!command.equals("5"));
 
 
-		
 	}
-
-	
 
 }

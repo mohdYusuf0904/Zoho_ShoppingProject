@@ -16,7 +16,6 @@ public class MyCartUi {
 		if(productList==null || productList.isEmpty())
 		{
 			System.out.println("[ Cart Is Empty ]");
-			System.out.println("3.Back");
 			return;
 		}
 
@@ -41,7 +40,7 @@ public class MyCartUi {
 			
 			String command="";
 			do {
-				System.out.print("Enter :");
+				System.out.print("Enter : ");
 				command = Utility.in.next();
 				
 				switch(command)

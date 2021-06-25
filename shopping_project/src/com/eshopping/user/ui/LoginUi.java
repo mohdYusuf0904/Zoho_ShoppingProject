@@ -1,7 +1,7 @@
 package com.eshopping.user.ui;
+import com.eshopping.shopping.Shopping;
 import com.eshopping.user.UserManager;
 import com.eshopping.util.Utility;
-import com.eshopping.shopping.Shopping;
 
 public class LoginUi {
 	
@@ -38,8 +38,13 @@ public class LoginUi {
 			
 		}
 		
-		System.out.print("\nEnter a mailid:");
-		email = Utility.in.next();
+	
+		while(!UserManager.getInstance().isEmailValid(email)) {
+			
+			System.out.print("\nEnter a mailid:");
+			email = Utility.in.next();
+		}
+		
 		System.out.print("\nEnter a password:");
 		password =  Utility.in.next();
 				

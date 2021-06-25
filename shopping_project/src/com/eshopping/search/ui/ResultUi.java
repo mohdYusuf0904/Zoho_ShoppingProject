@@ -1,5 +1,4 @@
 package com.eshopping.search.ui;
-
 import java.util.List;
 
 import com.eshopping.buy.BuyProduct;
@@ -52,14 +51,14 @@ public class ResultUi {
 	private int userSearch(int size) {
 		
 		int command=0;
-		System.out.println("Enter");
+		System.out.print("Enter : ");
 		command=Utility.in.nextInt();
 		
 		while(command<=0 || command>size)
 		{
 			
 			System.out.println();
-			System.out.print("Enter again:");
+			System.out.print("Enter again : ");
 			command=Utility.in.nextInt();
 		
 		}

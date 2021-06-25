@@ -14,7 +14,7 @@ public class OrderListUi {
 		
 		if(orderList==null)
 		{
-			System.out.println("Order Is Empty");
+			System.out.println("[ Order Is Empty ]");
 			return;
 		}
 		
@@ -32,7 +32,7 @@ public class OrderListUi {
 	private int userSearch(int size) {
 		
 		int command=0;
-		System.out.println("Enter");
+		System.out.print("Enter :");
 		command=Utility.in.nextInt();
 		
 		while(command<=0 || command>size)
@@ -56,7 +56,7 @@ public class OrderListUi {
 			System.out.println("| 2. Buy Again              |");
 			System.out.println("| 3. Back                   |");
 			System.out.println("+===========================+");
-			
+			System.out.println("Enter :");
 		  command = Utility.in.next();
 		  switch(command)
 		  {

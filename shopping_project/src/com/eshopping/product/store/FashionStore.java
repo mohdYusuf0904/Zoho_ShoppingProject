@@ -3,14 +3,14 @@ import com.eshopping.product.FashionProduct;
 import com.eshopping.product.ProductManager;
 import com.eshopping.product.entities.Fashion;
 
-
 public class FashionStore {
 
-	private  static FashionStore fashionStore = new FashionStore();
+	private static FashionStore fashionStore = new FashionStore();
 	
 	private FashionStore(){
 		
 	}
+	
 	
 	public void loadProducts() {	
 		
@@ -25,8 +25,6 @@ public class FashionStore {
 	}
 	
 	
-
-	
 	private void loadFlipFLop() {
 
 		FashionProduct flipflop = null;
@@ -36,6 +34,7 @@ public class FashionStore {
 		String size[] = {"42","44","48"};
 		String brand[]= {"adidas","crocs","woodland"};
 		String person[]= {"Men","Women","Kids"};
+		
 		for(int i=0;i<3;i++)
 		{
 			flipflop = new Fashion.FashionBuilder(person[i] +" Flipflop",480)
@@ -313,8 +312,8 @@ public class FashionStore {
 			
 			shirt = new Fashion.FashionBuilder(person[i]+" Shirts",1100)
 			.setPerson(person[i])
-			.setDescription("John players  " + s[i%2] + " "+ colour[i%2] + " "+ person[i] +"  " + colour[i%2] + "Slim Fit Printed Spread Collar Formal Shirt")
-			.setBrand("John players")
+			.setDescription("Johnplayers  " + s[i%2] + " "+ colour[i%2] + " "+ person[i] +"  " + colour[i%2] + "Slim Fit Printed Spread Collar Formal Shirt")
+			.setBrand("Johnplayers")
 			.setCatagory("Formal")
 			.setColour(colour[i%2])
 			.setSize(s[i%2]).getNewFashion();
@@ -324,8 +323,8 @@ public class FashionStore {
 			
 			shirt = new Fashion.FashionBuilder(person[i]+" Shirt",800)
 			.setPerson(person[i])
-			.setDescription("Net play  " + s[i%2] + " "+ colour[i%2] +" "+person[i]+  " Regular Fit Solid Spread Collar Casual Shirt")
-			.setBrand("Net play")
+			.setDescription("Netplay  " + s[i%2] + " "+ colour[i%2] +" "+person[i]+  " Regular Fit Solid Spread Collar Casual Shirt")
+			.setBrand("Netplay")
 			.setCatagory("Casual")
 			.setColour(colour[i%2])
 			.setSize(s[i%2]).getNewFashion();

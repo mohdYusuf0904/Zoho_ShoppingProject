@@ -11,7 +11,7 @@ public class ElectronicDetails {
 
 	public String getWashingMachineWarrantyDetails() {
 		// TODO Auto-generated method stub
-		return "Warranty Summary :"
+		return "|Warranty Summary :"
 				+ "3 Years Warranty on Product and 10 Years Warranty on Motor from Samsung\r\n"
 				+ "|Covered in Warranty : "
 				+ "All Parts Excluding Outer Cabinet and Plastic Parts from the Date of Purchase will be Covered Under Warranty"
@@ -33,7 +33,7 @@ public class ElectronicDetails {
 
 	public String getTvWarrantyDetails() {
 	
-	       return "Warranty Summary     :  1 Year \n"
+	       return "|Warranty Summary     :  1 Year \n"
 				+ "|Covered in Warranty  :  Defect Arising Out of Faulty or Defective Material or Workmanship. Parts and Labor"
 				+ "\n|Cost is Covered in Warranty\n"
 				+ "\n|Not Covered in Warranty\n|\n"
@@ -51,7 +51,7 @@ public class ElectronicDetails {
 	}
 
 	public String getMobileWarrantyDetails() {
-		return  "Warranty Summary "
+		return  "|Warranty Summary "
 				+ ": 1 Year on Handset and 6 Months on Accessories\r\n"
 				+ "|Domestic Warranty :"
 				+ " 1 Year";
@@ -85,7 +85,7 @@ public class ElectronicDetails {
 	public String getWarrantyDetails() {
 		
 		return  "\n"
-				+ "Warranty Summary        :   1 Year Onsite Warranty\n"
+				+ "|Warranty Summary        :   1 Year Onsite Warranty\n"
 				+ "|Warranty Service Type   :   Onsite\n" 
 				+ "|Covered in Warranty     :   Manufacturing Defects\n"
 			    + "|Not Covered in Warranty :   Physical Damage\n"
@@ -121,7 +121,7 @@ public class ElectronicDetails {
 	public String getFridgeWarrantyDetails() {
 	
 		
-		return    "Warranty Service Type   : Technician Visit\n"
+		return    "|Warranty Service Type   : Technician Visit\n"
 				+ "|Warranty Summary        : 1 Year on Product and 10 Years on Compressor From LG";
 				
 	}

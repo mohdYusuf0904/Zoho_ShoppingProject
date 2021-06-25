@@ -1,12 +1,9 @@
 package com.eshopping.util;
-
 import com.eshopping.cart.ui.MyCartUi;
 
 public class UtilCart {
 
-	
 	private MyCartUi myCartUi;
-	
 	
 	public MyCartUi getMyCartUi() {
 		
@@ -17,6 +14,5 @@ public class UtilCart {
 		
 		return myCartUi;
 	}
-	
 	
 }
