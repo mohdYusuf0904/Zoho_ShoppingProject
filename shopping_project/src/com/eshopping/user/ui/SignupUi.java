@@ -65,8 +65,10 @@ public class SignupUi {
 			System.out.print("Enter:");
 			u.setPassword(Utility.in.next());
 		}
+		
 		System.out.println("\nRe-enter a password");
 		System.out.println("Enter:");
+		
 		while(!Utility.in.next().equals(u.getPassword())) {	
 			
 			System.out.println("Re-password must be same");
