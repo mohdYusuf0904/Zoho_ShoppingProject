@@ -4,7 +4,7 @@ import com.eshopping.buy.ui.*;
 
 public class UtilBuy {
 
-	private static UtilBuy utilBuy;
+	
 	private ElectronicBuyUi ebuyUi;
 	private FashionBuyUi fBuyUi ;
 	private ChooseOptionUi chooseOption ;

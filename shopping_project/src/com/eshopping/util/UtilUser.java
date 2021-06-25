@@ -3,7 +3,7 @@ import com.eshopping.user.ui.*;
 
 public  class UtilUser {
 
-	private static UtilUser utilUser;
+	
 	private  UiOperation userOperation ;
 	private  LoginUi loginui;
 	private  SignupUi signUi;

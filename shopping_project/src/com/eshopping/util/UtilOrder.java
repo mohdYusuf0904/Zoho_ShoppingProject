@@ -6,7 +6,6 @@ import com.eshopping.order.ui.ProductSummaryUi;
 public class UtilOrder{
 	
 	private ProductSummaryUi productSummaryUi;
-	private static UtilOrder utilOrder;
 	private OrderListUi orderListUI;
 	private InvoiceUI invoiceUI;
 	

@@ -4,8 +4,6 @@ import com.eshopping.search.ui.*;
 
 public class UtilSearch {
 	
-	
-	private static UtilSearch utilSearch;
 	private ResultUi resultUi = new ResultUi();
 	private SearchAllUi searchAllui;
 	private SearchUi searchUi;
