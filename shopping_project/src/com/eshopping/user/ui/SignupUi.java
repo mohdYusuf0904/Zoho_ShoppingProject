@@ -20,6 +20,14 @@ public class SignupUi {
 	private void setName(User u) {
 		System.out.print("\nEnter a Name:");
 		u.setName(Utility.in.nextLine());
+		System.out.println();
+		while(!UserManager.getInstance().isValidUsername(u.getName()))
+		{
+			System.out.print("Enter again:");
+			u.setName(Utility.in.nextLine());
+			System.out.println();
+			
+		}
 	}
 
 	private void setEmail(User u) {

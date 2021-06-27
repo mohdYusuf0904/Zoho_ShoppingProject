@@ -25,7 +25,7 @@ public class ResultUi {
 		
 		  for(Product p:productList) {	  
 		  System.out.println("+----+--------------+----------------------------------------+------------------------------------------------------------------------------------------------------+");	
-		  System.out.println("id : "+(productList.indexOf(p)+1)+" <== [Buy] \n"+ "Name : " +  p.getName()+"\nProduct Details : "+p.getDescription()+"\nPrice :  "+ p.getPrice());
+		  System.out.println("id : "+(productList.indexOf(p)+1)+" <== [Buy] \n"+ "Name : " +  p.getName()+"\nProduct Details : "+p.getDescription()+"\nPrice :  "+ p.getPrice()+"\n");
 		  System.out.println("+----+--------------+----------------------------------------+------------------------------------------------------------------------------------------------------+");	
 		  }
 		}

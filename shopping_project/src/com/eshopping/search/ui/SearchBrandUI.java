@@ -25,5 +25,5 @@ public class SearchBrandUI {
 		SearchEngine.getInstance().getBrandProduct(Utility.in.next());
 		
 	}
-	
+
 }

@@ -21,7 +21,7 @@ public class CartManager {
 	public boolean addCart(Product p) {
 		
 		
-		if(!cartDB.isNull() &&  cartDB.getCart(Shopping.getInstance().getUser()).indexOf(p)!=-1) {
+		if(!cartDB.isNull(Shopping.getInstance().getUser()) &&  cartDB.getCart(Shopping.getInstance().getUser()).contains(p)) {
 		
 			return true;
 		}
@@ -32,20 +32,20 @@ public class CartManager {
 	}
 	
 	public void cartRemove(int removeId) {
+	
+		cartDB.removeInCart(Shopping.getInstance().getUser(), cartDB.getCart(Shopping.getInstance().getUser()).get(removeId));
+	}
+
+	public void removeProductInCartIfExists(Product p) {
 		
-		cartDB.removeInCart(cartDB.getCart(Shopping.getInstance().getUser()).get(removeId));
+		cartDB.removeInCart(Shopping.getInstance().getUser(), p);
 		
 	}
 
 	
-	
 	public void removeCartList(List<Product> list)
 	{
-		for(Product p: list)
-		{
-			cartRemove(list.indexOf(p));
-		}
-		
+		cartDB.cartClear(Shopping.getInstance().getUser(),list);
 	}
 	
 
@@ -66,7 +66,5 @@ public class CartManager {
 		return cartManagerment;	
 	}
 
-	
-	
 }
 

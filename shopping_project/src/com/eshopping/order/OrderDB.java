@@ -9,18 +9,19 @@ import com.eshopping.user.User;
 public class OrderDB {
 	
 	private Map<User,List<Order>> userOrders;
-	private List<Order> productList;
+
 	
 	public OrderDB()
 	{
 		userOrders = new HashMap<>();
-		productList = new ArrayList<>();
+		
 	}
 	
 	public void addMyOrder(User user, Order order) {
 	
-		productList.add(order);
-		userOrders.put(user,productList);	
+		userOrders.putIfAbsent(user, new ArrayList<>());
+		
+		userOrders.get(user).add(order);
 	}
 
 	public List<Order> getMyOrder(User u){

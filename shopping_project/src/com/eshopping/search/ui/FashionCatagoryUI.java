@@ -11,11 +11,9 @@ public class FashionCatagoryUI {
 	
 	public void ChoosePerson(List<FashionProduct> product)
 	{
-		
 
 		String cmmnd="";
 		do {
-	
 			
 		System.out.println("+-----------------------Person------------------------------+");
 		System.out.println("|-----[1.Men]-----[2.Women]----[3.Kid]----[4.Back]----------|");
@@ -26,13 +24,13 @@ public class FashionCatagoryUI {
 		{
 			
 			case "1":
-				selectedPersonItems(SearchEngine.getInstance().getProductMen());
+				selectedPersonItems(SearchEngine.getInstance().getProductMen(product));
 				break;
 			case "2":
-				selectedPersonItems(SearchEngine.getInstance().getProductWomen());
+				selectedPersonItems(SearchEngine.getInstance().getProductWomen(product));
 				break;
 			case "3":
-				selectedPersonItems(SearchEngine.getInstance().getProductKid());
+				selectedPersonItems(SearchEngine.getInstance().getProductKid(product));
 				break;
 			case "4":
 				System.out.println("Back <==");
@@ -73,10 +71,13 @@ public class FashionCatagoryUI {
 						break;
 					case "4":
 						System.out.println("Back <==");
+						
 						break;
 					case "5":
-						if(product.get(0).getPerson().equalsIgnoreCase("women"))
+						if(product.get(0).getPerson().equalsIgnoreCase("women")) 
 						SearchEngine.getInstance().searchCatagory(product, "saree");
+						else
+							System.out.println("Wrond Operation");
 						break;
 					default:
 						System.out.println("Wrond Operation");

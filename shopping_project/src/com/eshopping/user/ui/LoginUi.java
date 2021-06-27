@@ -1,12 +1,11 @@
 package com.eshopping.user.ui;
-import com.eshopping.shopping.Shopping;
 import com.eshopping.user.UserManager;
 import com.eshopping.util.Utility;
 
 public class LoginUi {
 	
 	
-	 public void loginPage() {
+	 public boolean loginPage() {
 		
 		System.out.println("Please make sure enter a correct details");
 		System.out.println("Only three tries");
@@ -17,14 +16,15 @@ public class LoginUi {
 		do {
 		
 		if(i==0) {		
-				
+		
 				if(isReSignup())
 				{
 					UserManager.getInstance().createSignUp();
-				
+				}else {
+					return false;
 				}
-				
 				break;
+				
 		}else if(i<3)
 		{
 			System.out.println("\nWrong password or email !");
@@ -38,25 +38,24 @@ public class LoginUi {
 			
 		}
 		
-	
+		email="";
 		while(!UserManager.getInstance().isEmailValid(email)) {
 			
 			System.out.print("\nEnter a mailid:");
 			email = Utility.in.next();
+		
 		}
 		
 		System.out.print("\nEnter a password:");
 		password =  Utility.in.next();
+		
 				
 		i--;
 		
 	 
 		}while(!UserManager.getInstance().IsUserExist(email,password));
 		
-		if(i>0)
-		{
-			Shopping.getInstance().shoppingPage();
-		}
+		return true;
 		
   }
 
@@ -76,7 +75,7 @@ public class LoginUi {
 	}
 	
 	
-	private  boolean isChangePassword()
+	private boolean isChangePassword()
 	{
 
 		System.out.println("Forgot password");

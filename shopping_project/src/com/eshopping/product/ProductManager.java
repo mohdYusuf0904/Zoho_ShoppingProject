@@ -12,6 +12,25 @@ public class ProductManager {
 	}
 	
 
+	
+	public int quantityCheck(Product product) {
+		
+		int numOf=0;
+		
+		for(Product p: productsDataBase.getProduct())
+		{
+			
+			if(p.getName().equals(product.getName()) && p.getPrice()==product.getPrice() &&
+					p.getDescription().equals(product.getDescription()))
+			{
+				numOf++;				
+			}
+
+		}
+		return numOf;
+		
+	}
+	
 	public void addProducts(Product p) {
 		
 		productsDataBase.StoreProducts(p);
@@ -27,16 +46,13 @@ public class ProductManager {
 	public void removeProduct(Product p) {
 		
 		productsDataBase.removeProduct(p);
+		
 	}
-
 
 
 	public void removeProductList(List<Product> list) {
 		
-		for(Product p: list)
-		{
-			removeProduct(p);
-		}
+		productsDataBase.removeAll(list);
 	}
 
 	
