@@ -59,8 +59,8 @@ public class SearchEngine{
 
 		List<Product> productList = new ArrayList<>();
 
-		for (Product p : list) {
-			if (p.getName().toLowerCase().contains(args)) {
+		for (FashionProduct p : list) {
+			if (p.getCatagory().equalsIgnoreCase(args)) {
 				productList.add(p);
 			}
 		}

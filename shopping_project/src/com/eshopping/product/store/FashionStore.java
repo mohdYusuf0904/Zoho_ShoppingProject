@@ -36,13 +36,13 @@ public class FashionStore {
 			flipflop = new Fashion.FashionBuilder(person[i] + " Flipflop", 480).setBrand(brand[i])
 					.setColour(color[i % 2])
 					.setDescription(person[i] + " " + color[i % 2] + " Typography Print Sliders").setPerson(person[i])
-					.setSize(size[i]).setCatagory("Casual").getNewFashion();
+					.setSize(size[i]).setCatagory("Flipflop").getNewFashion();
 			ProductManager.getInstance().addProducts(flipflop);
 
 			flipflop = new Fashion.FashionBuilder(person[i] + " Flipflop", 1180).setBrand(brand[i])
 					.setColour(color[i % 2])
 					.setDescription(person[i] + " " + color[i % 2] + " Unisex Seasonal Printed Clogs")
-					.setPerson(person[i]).setSize(size[i]).setCatagory("Casual").getNewFashion();
+					.setPerson(person[i]).setSize(size[i]).setCatagory("Flipflop").getNewFashion();
 			ProductManager.getInstance().addProducts(flipflop);
 
 		}
@@ -59,12 +59,12 @@ public class FashionStore {
 		for (int i = 0; i < 3; i++) {
 			sandals = new Fashion.FashionBuilder(person[i] + " Sandals", 1180).setBrand(brand[i])
 					.setColour(color[i % 2]).setDescription(person[i] + " " + color[i % 2] + " Relay MU Sports Sandals")
-					.setPerson(person[i]).setSize(size[i]).setCatagory("Casual").getNewFashion();
+					.setPerson(person[i]).setSize(size[i]).setCatagory("Sandals").getNewFashion();
 			ProductManager.getInstance().addProducts(sandals);
 
 			sandals = new Fashion.FashionBuilder(person[i] + " Sandals", 780).setBrand(brand[i]).setColour(color[i % 2])
 					.setDescription(person[i] + " " + color[i % 2] + " ULTRA FLEX NEON STAR Sports Sandals")
-					.setPerson(person[i]).setSize(size[i]).setCatagory("Casual").getNewFashion();
+					.setPerson(person[i]).setSize(size[i]).setCatagory("Sandals").getNewFashion();
 			ProductManager.getInstance().addProducts(sandals);
 
 		}
@@ -80,12 +80,12 @@ public class FashionStore {
 		for (int i = 0; i < 3; i++) {
 			shoe = new Fashion.FashionBuilder(person[i] + " Shoe", 2180).setBrand(brand[i]).setColour(color[i % 2])
 					.setDescription(person[i] + " " + color[i % 2] + " Mesh Running Shoes").setPerson(person[i])
-					.setSize(size[i]).setCatagory("Casual").getNewFashion();
+					.setSize(size[i]).setCatagory("Shoe").getNewFashion();
 			ProductManager.getInstance().addProducts(shoe);
 
 			shoe = new Fashion.FashionBuilder(person[i] + " Shoe", 2180).setBrand(brand[i]).setColour(color[i % 2])
 					.setDescription(person[i] + " " + color[i % 2] + " Semiformal Shoes").setPerson(person[i])
-					.setSize(size[i]).setCatagory("Formal").getNewFashion();
+					.setSize(size[i]).setCatagory("Shoe").getNewFashion();
 			ProductManager.getInstance().addProducts(shoe);
 		}
 
@@ -101,7 +101,7 @@ public class FashionStore {
 			tshirt = new Fashion.FashionBuilder(person[i] + " Tshirt", 350).setPerson(person[i])
 					.setDescription("Dnmx " + s[i % 2] + " " + colour[i % 2] + "Color Block " + person[i]
 							+ " Round Neck T-Shirt")
-					.setCatagory("Roundneck").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx")
+					.setCatagory("tshirt").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx")
 					.getNewFashion();
 
 			ProductManager.getInstance().addProducts(tshirt);
@@ -109,7 +109,7 @@ public class FashionStore {
 			tshirt = new Fashion.FashionBuilder(person[i] + " Tshirt", 440).setPerson(person[i])
 					.setDescription("Dnmx " + s[i % 2] + " " + colour[i % 2] + "Color Block " + person[i]
 							+ " Colar Neck T-Shirt")
-					.setCatagory("Colar neck").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx")
+					.setCatagory("tshirt").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx")
 					.getNewFashion();
 			ProductManager.getInstance().addProducts(tshirt);
 		}
@@ -201,7 +201,7 @@ public class FashionStore {
 
 			pant = new Fashion.FashionBuilder("Men jeans Pant", 1100).setPerson(person[i])
 					.setDescription("Dnmx   " + s[i % 2] + " " + colour[i % 2] + "  Flexi Slim Men Dark Blue formal")
-					.setColour(colour[i % 2]).setSize(s[i % 2]).setBrand("Dnmx").setCatagory("formal").getNewFashion();
+					.setColour(colour[i % 2]).setSize(s[i % 2]).setBrand("Dnmx").setCatagory("Formal").getNewFashion();
 			ProductManager.getInstance().addProducts(pant);
 
 			pant = new Fashion.FashionBuilder("Men Formal Pant", 800).setPerson(person[i])
@@ -225,21 +225,21 @@ public class FashionStore {
 			shirt = new Fashion.FashionBuilder(person[i] + " Shirts", 1100).setPerson(person[i])
 					.setDescription("Johnplayers  " + s[i % 2] + " " + colour[i % 2] + " " + person[i] + "  "
 							+ colour[i % 2] + "Slim Fit Printed Spread Collar Formal Shirt")
-					.setBrand("Johnplayers").setCatagory("Formal").setColour(colour[i % 2]).setSize(s[i % 2])
+					.setBrand("Johnplayers").setCatagory("shirt").setColour(colour[i % 2]).setSize(s[i % 2])
 					.getNewFashion();
 			ProductManager.getInstance().addProducts(shirt);
 
 			shirt = new Fashion.FashionBuilder(person[i] + " Shirt", 800).setPerson(person[i])
 					.setDescription("Netplay  " + s[i % 2] + " " + colour[i % 2] + " " + person[i]
 							+ " Regular Fit Solid Spread Collar Casual Shirt")
-					.setBrand("Netplay").setCatagory("Casual").setColour(colour[i % 2]).setSize(s[i % 2])
+					.setBrand("Netplay").setCatagory("shirt").setColour(colour[i % 2]).setSize(s[i % 2])
 					.getNewFashion();
 			ProductManager.getInstance().addProducts(shirt);
 			
 			shirt = new Fashion.FashionBuilder(person[i] + " Shirt", 800).setPerson(person[i])
 					.setDescription("Netplay  " + s[i % 2] + " " + colour[i % 2] + " " + person[i]
 							+ " Regular Fit Solid Spread Collar Casual Shirt")
-					.setBrand("Netplay").setCatagory("Casual").setColour(colour[i % 2]).setSize(s[i % 2])
+					.setBrand("Netplay").setCatagory("shirt").setColour(colour[i % 2]).setSize(s[i % 2])
 					.getNewFashion();
 			ProductManager.getInstance().addProducts(shirt);
 

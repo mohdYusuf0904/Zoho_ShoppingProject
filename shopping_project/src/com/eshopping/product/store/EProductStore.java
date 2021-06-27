@@ -130,10 +130,6 @@ public class EProductStore {
 					.setWarrrantyDetails(ed.getWarrantyDetails()).getElectronicInstance();
 
 			ProductManager.getInstance().addProducts(laptap);
-
-			
-			
-			
 		}
 
 	}
