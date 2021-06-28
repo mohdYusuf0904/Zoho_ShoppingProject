@@ -198,12 +198,12 @@ public class FashionStore {
 		String person[] = { "Men", "Women", "Kids" };
 		for (int i = 0; i < 3; i++) {
 
-			pant = new Fashion.FashionBuilder("Men jeans Pant", 1100).setPerson(person[i])
+			pant = new Fashion.FashionBuilder("Men Formal Pant", 1100).setPerson(person[i])
 					.setDescription("Dnmx   " + s[i % 2] + " " + colour[i % 2] + "  Flexi Slim Men Dark Blue formal")
 					.setColour(colour[i % 2]).setSize(s[i % 2]).setBrand("Dnmx").setCatagory("Formal").getNewFashion();
 			ProductManager.getInstance().addProducts(pant);
 
-			pant = new Fashion.FashionBuilder("Men Formal Pant", 800).setPerson(person[i])
+			pant = new Fashion.FashionBuilder("Men Jeans Pant", 800).setPerson(person[i])
 					.setDescription("Arrows  " + s[i % 2] + " " + colour[i % 2] + "  Slim Fit Flat-Front Trousers")
 					.setColour(colour[i % 2]).setSize(s[i % 2]).setBrand("Arrows").setCatagory("Jeans").getNewFashion();
 			ProductManager.getInstance().addProducts(pant);
