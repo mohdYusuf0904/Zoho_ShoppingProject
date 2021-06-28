@@ -51,7 +51,7 @@ public class SignupUi {
 		u.setPhone(Utility.in.next());
 
 		while (u.getPhone().length() < 10
-				|| u.getPhone().length() > 10 && UserManager.getInstance().isPhoneNumberValid(null)) {
+				|| u.getPhone().length() > 10 && UserManager.getInstance().isPhoneNumberValid(u.getPhone())) {
 			System.out.println("Not valid number : must contains 10 digit number");
 			System.out.print("Enter:");
 			u.setPhone(Utility.in.next());
