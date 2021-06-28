@@ -1,5 +1,4 @@
 package com.eshopping.user;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.eshopping.shopping.Shopping;
@@ -48,15 +47,16 @@ public class UserManager {
 	}
 
 	public void StoreUser(User u) {
-
+		
 		userDatabase.addUser(u);
+	
 	}
 
 	public boolean isPhoneNumberValid(String s) {
 
-		Pattern p = Pattern.compile("(0|91)?[7-9][0-9]{9}");
+		Pattern p = Pattern.compile("[0-9]{10}");
 		Matcher m = p.matcher(s);
-		return (m.find() && m.group().equals(s));
+		return m.matches();
 	}
 
 	public boolean isEmailValid(String email) {
@@ -92,7 +92,8 @@ public class UserManager {
 
 	public void logIn() {
 
-		if(utilUser.getLoginUi().loginPage());
+		if (utilUser.getLoginUi().loginPage())
+			;
 		{
 			Shopping.getInstance().shoppingPage();
 		}
@@ -105,26 +106,24 @@ public class UserManager {
 	public void userOperation() {
 
 		utilUser.getUserOperation().userOperation();
-		;
+		
 	}
 
-	 public  boolean isValidUsername(String name)
-	    {
-	  
-	        String regex = "^[A-Za-z]\\w{5,29}$";
-	  
-	        Pattern p = Pattern.compile(regex);
-	  
-	        if (name == null) {
-	            return false;
-	        }
-	
-	        Matcher m = p.matcher(name);
-	  
-	        return m.matches();
-	    }
-	
-	
+	public boolean isValidUsername(String name) {
+
+		String regex = "^[A-Za-z]{3,29}$";
+
+		Pattern p = Pattern.compile(regex);
+
+		if (name == null) {
+			return false;
+		}
+
+		Matcher m = p.matcher(name);
+
+		return m.matches();
+	}
+
 	public static UserManager getInstance() {
 
 		if (userManager == null) {
