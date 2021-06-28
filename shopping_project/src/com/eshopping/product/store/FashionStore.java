@@ -165,7 +165,6 @@ public class FashionStore {
 
 		FashionProduct saree = null;
 		String[] colour = { "(Maroon, Black)", "(Orange)" };
-		String[] catagory = { "Pure Silk", "Silk", "Cotton Blend" };
 		String brand[] = { "Fabwomen", "Cartyshop", "Saraa" };
 		String description[] = {
 
@@ -177,15 +176,15 @@ public class FashionStore {
 		for (int i = 0; i < 3; i++) {
 
 			saree = new Fashion.FashionBuilder("Saree", 820).setPerson("Women").setDescription(description[i])
-					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory(catagory[i]).getNewFashion();
+					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
 			saree = new Fashion.FashionBuilder("Saree", 520).setPerson("Women").setDescription(description[i])
-					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory(catagory[i]).getNewFashion();
+					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
 			saree = new Fashion.FashionBuilder("Saree", 780).setPerson("Women").setDescription(description[i])
-					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory(catagory[i]).getNewFashion();
+					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
 		}
