@@ -121,7 +121,7 @@ public class FashionStore {
 		String s[] = { "XL", "L" };
 		String person[] = { "Men", "Women", "Kids" };
 		String colour[] = { "light blue", "Black" };
-		String brand[] = { "Altheroy ", "H&M ", "HIGH LANDER"
+		String brand[] = { "Altheroy ", "H&M ", "HIGHLANDER"
 
 		};
 		for (int i = 0; i < 3; i++) {
