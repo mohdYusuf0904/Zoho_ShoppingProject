@@ -54,7 +54,7 @@ public class UserManager {
 
 	public boolean isPhoneNumberValid(String s) {
 
-		Pattern p = Pattern.compile("(0|91)?[7-9][0-9]{9}");
+		Pattern p = Pattern.compile("[0-9]{10}");
 		Matcher m = p.matcher(s);
 		return (m.find() && m.group().equals(s));
 	}
@@ -111,7 +111,7 @@ public class UserManager {
 	 public  boolean isValidUsername(String name)
 	    {
 	  
-	        String regex = "^[A-Za-z]\\w{5,29}$";
+	        String regex = "^[A-Za-z]\\w{3,29}$";
 	  
 	        Pattern p = Pattern.compile(regex);
 	  
