@@ -109,21 +109,26 @@ public class UserManager {
 		
 	}
 
-	public boolean isValidUsername(String name) {
+	
 
-		String regex = "^[A-Za-z]{3,29}$";
 
-		Pattern p = Pattern.compile(regex);
-
-		if (name == null) {
-			return false;
-		}
-
-		Matcher m = p.matcher(name);
-
-		return m.matches();
-	}
-
+	 public  boolean isValidUsername(String name)
+	    {
+	  
+	        String regex = "^[A-Za-z]\\w{3,29}$";
+	  
+	        Pattern p = Pattern.compile(regex);
+	  
+	        if (name == null) {
+	            return false;
+	        }
+	
+	        Matcher m = p.matcher(name);
+	  
+	        return m.matches();
+	    }
+	
+	
 	public static UserManager getInstance() {
 
 		if (userManager == null) {

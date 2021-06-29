@@ -174,6 +174,7 @@ public class FashionStore {
 		for (int i = 0; i < 3; i++) {
 
 			saree = new Fashion.FashionBuilder("Saree", 820).setPerson("Women").setDescription(description[i])
+
 					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("Saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
