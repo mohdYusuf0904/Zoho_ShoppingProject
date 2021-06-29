@@ -101,16 +101,14 @@ public class FashionStore {
 			tshirt = new Fashion.FashionBuilder(person[i] + " Tshirt", 350).setPerson(person[i])
 					.setDescription("Dnmx " + s[i % 2] + " " + colour[i % 2] + "Color Block " + person[i]
 							+ " Round Neck T-Shirt")
-					.setCatagory("tshirt").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx")
-					.getNewFashion();
+					.setCatagory("tshirt").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx").getNewFashion();
 
 			ProductManager.getInstance().addProducts(tshirt);
 
 			tshirt = new Fashion.FashionBuilder(person[i] + " Tshirt", 440).setPerson(person[i])
 					.setDescription("Dnmx " + s[i % 2] + " " + colour[i % 2] + "Color Block " + person[i]
 							+ " Colar Neck T-Shirt")
-					.setCatagory("tshirt").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx")
-					.getNewFashion();
+					.setCatagory("tshirt").setSize(s[i % 2]).setColour(colour[i % 2]).setBrand("Dnmx").getNewFashion();
 			ProductManager.getInstance().addProducts(tshirt);
 		}
 	}
@@ -121,7 +119,7 @@ public class FashionStore {
 		String s[] = { "XL", "L" };
 		String person[] = { "Men", "Women", "Kids" };
 		String colour[] = { "light blue", "Black" };
-		String brand[] = { "Altheroy ", "H&M ", "HIGH LANDER"
+		String brand[] = { "Altheroy ", "H&M ", "HIGHLANDER"
 
 		};
 		for (int i = 0; i < 3; i++) {
@@ -165,7 +163,6 @@ public class FashionStore {
 
 		FashionProduct saree = null;
 		String[] colour = { "(Maroon, Black)", "(Orange)" };
-		String[] catagory = { "Pure Silk", "Silk", "Cotton Blend" };
 		String brand[] = { "Fabwomen", "Cartyshop", "Saraa" };
 		String description[] = {
 
@@ -177,15 +174,15 @@ public class FashionStore {
 		for (int i = 0; i < 3; i++) {
 
 			saree = new Fashion.FashionBuilder("Saree", 820).setPerson("Women").setDescription(description[i])
-					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory(catagory[i]).getNewFashion();
+					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("Saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
 			saree = new Fashion.FashionBuilder("Saree", 520).setPerson("Women").setDescription(description[i])
-					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory(catagory[i]).getNewFashion();
+					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("Saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
 			saree = new Fashion.FashionBuilder("Saree", 780).setPerson("Women").setDescription(description[i])
-					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory(catagory[i]).getNewFashion();
+					.setColour(colour[i % 2]).setSize("L").setBrand(brand[i]).setCatagory("Saree").getNewFashion();
 			ProductManager.getInstance().addProducts(saree);
 
 		}
@@ -199,12 +196,12 @@ public class FashionStore {
 		String person[] = { "Men", "Women", "Kids" };
 		for (int i = 0; i < 3; i++) {
 
-			pant = new Fashion.FashionBuilder("Men jeans Pant", 1100).setPerson(person[i])
+			pant = new Fashion.FashionBuilder("Men Formal Pant", 1100).setPerson(person[i])
 					.setDescription("Dnmx   " + s[i % 2] + " " + colour[i % 2] + "  Flexi Slim Men Dark Blue formal")
 					.setColour(colour[i % 2]).setSize(s[i % 2]).setBrand("Dnmx").setCatagory("Formal").getNewFashion();
 			ProductManager.getInstance().addProducts(pant);
 
-			pant = new Fashion.FashionBuilder("Men Formal Pant", 800).setPerson(person[i])
+			pant = new Fashion.FashionBuilder("Men Jeans Pant", 800).setPerson(person[i])
 					.setDescription("Arrows  " + s[i % 2] + " " + colour[i % 2] + "  Slim Fit Flat-Front Trousers")
 					.setColour(colour[i % 2]).setSize(s[i % 2]).setBrand("Arrows").setCatagory("Jeans").getNewFashion();
 			ProductManager.getInstance().addProducts(pant);
@@ -235,7 +232,7 @@ public class FashionStore {
 					.setBrand("Netplay").setCatagory("shirt").setColour(colour[i % 2]).setSize(s[i % 2])
 					.getNewFashion();
 			ProductManager.getInstance().addProducts(shirt);
-			
+
 			shirt = new Fashion.FashionBuilder(person[i] + " Shirt", 800).setPerson(person[i])
 					.setDescription("Netplay  " + s[i % 2] + " " + colour[i % 2] + " " + person[i]
 							+ " Regular Fit Solid Spread Collar Casual Shirt")

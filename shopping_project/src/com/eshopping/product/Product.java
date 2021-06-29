@@ -1,11 +1,10 @@
 package com.eshopping.product;
 
-public interface Product {
+public abstract class Product {
 
-	public String getName();
-	public double getPrice();
-	public String getDescription();
-	public String getBrand();
-
-
+	abstract public String getName();
+	abstract public double getPrice();
+	abstract public String getDescription();
+	abstract public String getBrand();
+	
 }

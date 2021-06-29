@@ -19,8 +19,8 @@ public class OrderDB {
 	
 	public void addMyOrder(User user, Order order) {
 	
-		userOrders.putIfAbsent(user, new ArrayList<>());
 		
+		userOrders.putIfAbsent(user, new ArrayList<>());
 		userOrders.get(user).add(order);
 	}
 

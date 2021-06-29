@@ -2,7 +2,7 @@ package com.eshopping.product.entities;
 
 import com.eshopping.product.FashionProduct;
 
-public class Fashion implements FashionProduct {
+public class Fashion extends FashionProduct {
 
 	private String person;
 	private String name;

@@ -86,7 +86,7 @@ public class EProductStore {
 	private void LoadTelevision() {
 
 		ElectronicProduct tv;
-		String brand[] = { "one plus", "Mi" };
+		String brand[] = { "oneplus", "Mi" };
 		double price[] = { 49000, 35000 };
 		for (int i = 0; i < 2; i++) {
 

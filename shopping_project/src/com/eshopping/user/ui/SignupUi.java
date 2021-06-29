@@ -9,22 +9,27 @@ public class SignupUi {
 	public void signUpPage() {
 
 		User u = new User();
+		
 		setName(u);
+		
 		setEmail(u);
+		
 		setPhone(u);
+		
 		setPassword(u);
+		
 		UserManager.getInstance().StoreUser(u);
 
 	}
 
 	private void setName(User u) {
 		System.out.print("\nEnter a Name:");
-		u.setName(Utility.in.next());
+		u.setName(Utility.in.nextLine());
 		System.out.println();
 		while(!UserManager.getInstance().isValidUsername(u.getName()))
 		{
 			System.out.print("Enter again:");
-			u.setName(Utility.in.next());
+			u.setName(Utility.in.nextLine());
 			System.out.println();
 			
 		}

@@ -135,7 +135,7 @@ public class FashionCatagoryUI {
 		switch(command) {
 			
 				case "1":
-					SearchEngine.getInstance().searchCatagory(product,"sandal");
+					SearchEngine.getInstance().searchCatagory(product,"sandals");
 					break;
 				case "2":
 					SearchEngine.getInstance().searchCatagory(product,"shoe");

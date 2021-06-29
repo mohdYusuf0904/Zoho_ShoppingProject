@@ -42,7 +42,6 @@ public class CartManager {
 		
 	}
 
-	
 	public void removeCartList(List<Product> list)
 	{
 		cartDB.cartClear(Shopping.getInstance().getUser(),list);
@@ -54,8 +53,6 @@ public class CartManager {
 		utilCart.getMyCartUi().myCart(cartDB.getCart(Shopping.getInstance().getUser()));
 		
 	}
-
-
 	
 	public static CartManager getInstance() {
 		

@@ -1,9 +1,10 @@
 package com.eshopping.product;
 
-public interface FashionProduct extends Product {
+public abstract class FashionProduct extends Product {
 	
-	public String getCatagory();
-	public String getSize();
-	public String getColour();
-	public String getPerson();
+	abstract public String getCatagory();
+	abstract public String getSize();
+	abstract public String getColour();
+	abstract public String getPerson();
+	
 }
